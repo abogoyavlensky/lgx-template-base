@@ -1,4 +1,4 @@
-# project-name
+# projectname
 
 A basic let-go application.
 

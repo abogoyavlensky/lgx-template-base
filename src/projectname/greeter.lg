@@ -1,4 +1,4 @@
-(ns project-name.greeter)
+(ns projectname.greeter)
 
 (defn greet
   [name]

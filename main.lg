@@ -1,5 +1,5 @@
-(ns project-name.main
-  (:require [project-name.greeter :as greeter]))
+(ns projectname.main
+  (:require [projectname.greeter :as greeter]))
 
 (defn- main []
   (prn (greeter/greet "let-go")))
