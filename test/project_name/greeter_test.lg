@@ -1,0 +1,6 @@
+(ns project-name.greeter-test
+  (:require [clojure.test :refer :all]
+            [project-name.greeter :as greeter]))
+
+(deftest test-greet-ok
+  (is (= "Welcome to let-go!" (greeter/greet "let-go"))))

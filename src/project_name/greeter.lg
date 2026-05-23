@@ -1,0 +1,5 @@
+(ns project_name.greeter)
+
+(defn greet
+  [name]
+  (str "Welcome to " name "!"))
