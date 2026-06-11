@@ -1,10 +1,10 @@
 (ns projectname.main
-  (:require [projectname.greeter :as greeter]))
+  (:require [projectname.core :as c]))
 
 (defn- main []
-  (prn (greeter/greet "let-go")))
+  (println (c/greet "let-go")))
 
 ; Top-level forms run during AOT compilation too. Guard so `lg -b` doesn't
 ; execute the CLI while bundling.
-(when-not *compiling-aot* 
+(when-not *compiling-aot*
   (main))
