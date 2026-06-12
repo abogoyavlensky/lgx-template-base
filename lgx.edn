@@ -3,4 +3,6 @@
  :targets {:bin {:out "bin/projectname"}}
  :deps {}
  :tasks {fmt {:doc "Format source files"
-              :do [{:sh "cljfmt fix"}]}}}
+              :do [{:sh "cljfmt fix"}]}
+         lint {:doc "Lint source files"
+               :do [{:sh "find src test -type f -name '*.lg' -print0 | xargs -0 clj-kondo --lint"}]}}}
