@@ -17,6 +17,6 @@ lgx run
 lgx test
 lgx fmt
 lgx lint
-lgx build
 lgx nrepl
+lgx build
 ```
