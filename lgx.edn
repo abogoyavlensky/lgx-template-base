@@ -7,5 +7,11 @@
                       :type [:enum "fix" "check"]
                       :default "fix"}]
               :do [{:sh "cljfmt {{action}}"}]}
+         
          lint {:doc "Lint source files"
-               :do [{:sh "find src test -type f -name '*.lg' -print0 | xargs -0 clj-kondo --lint"}]}}}
+               :do [{:sh "find src test -type f -name '*.lg' -print0 | xargs -0 clj-kondo --lint"}]}
+         
+         check {:doc "Run all checks"
+                :do [{:sh "lgx fmt check"}
+                     {:sh "lgx lint"}
+                     {:sh "lgx test"}]}}}
